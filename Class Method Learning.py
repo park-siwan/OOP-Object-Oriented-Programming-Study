@@ -6,9 +6,18 @@ class User:
 
     @classmethod
     def from_string(cls, string_params):
+        parameter_list = string_params.split(",")
+        name = parameter_list[0]
+        email = parameter_list[1]
+        password = parameter_list[2]
+        return cls(name, email, password)
 
     @classmethod
     def from_list(cls, list_params):
+        name = list_params[0]
+        email = list_params[1]
+        password = list_params[2]
+        return cls(name, email, password)
 
 
 # 코드를 쓰세요
