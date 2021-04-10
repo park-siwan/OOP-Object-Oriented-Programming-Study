@@ -19,9 +19,6 @@ class User:
         password = list_params[2]
         return cls(name, email, password)
 
-
-# 코드를 쓰세요
-
 # 유저 생성 및 초기값 설정
 siwan = User.from_string("박시완,pswan3168@gmail.com,123456")
 donghun = User.from_list(["김동훈", "donghun@gmail.com", "abcdef"])
