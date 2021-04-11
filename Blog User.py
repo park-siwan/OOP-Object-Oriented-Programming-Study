@@ -21,13 +21,13 @@ class BlogUser:
         """
 
     def add_post(self, date, content):
-        post = Post(date, content)
-        self.posts.append(post)
+        new_post = Post(date, content)
+        self.posts.append(new_post)
     # 새로운 게시글 추가
 
     def show_all_posts(self):
-        for i in range(len(self.posts)):
-            print(self.posts[i])
+        for post in self.posts:
+            print(post)
 
     # 블로그 유저의 모든 게시글 출력
 
